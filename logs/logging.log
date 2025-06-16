@@ -1,1 +1,250 @@
 [2025-06-16 12:21:25,835: INFO: main: Welcome to custom logging]
+[2025-06-16 23:11:05,760: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-16 23:11:05,772: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 23:11:05,773: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 23:11:05,773: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\src\datascience\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\config\configuration.py", line 11, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Roaming\Python\Python312\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-06-16 23:12:50,082: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-16 23:12:50,084: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 23:12:50,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 23:12:50,085: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\src\datascience\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_ingestion_pipeline.py", line 13, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\config\configuration.py", line 11, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prana\AppData\Roaming\Python\Python312\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-06-16 23:48:12,990: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-16 23:48:12,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 23:48:12,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 23:48:12,994: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 23:48:12,995: INFO: common: created directory at: artifacts]
+[2025-06-16 23:48:12,995: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_ingestion'?
+[2025-06-16 23:49:34,355: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-16 23:49:34,357: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 23:49:34,357: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 23:49:34,359: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 23:49:34,361: INFO: common: created directory at: artifacts]
+[2025-06-16 23:49:34,361: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 23:49:34,361: ERROR: main: "'ConfigBox' object has no attribute 'root'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\config\configuration.py", line 19, in get_data_ingestion_config
+    root_dir = config.root.dir,
+               ^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+[2025-06-16 23:54:38,013: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-16 23:54:38,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 23:54:38,013: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 23:54:38,013: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 23:54:38,013: INFO: common: created directory at: artifacts]
+[2025-06-16 23:54:38,013: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 23:54:38,013: ERROR: main: "'ConfigBox' object has no attribute 'root'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\config\configuration.py", line 19, in get_data_ingestion_config
+    root_dir = config.root.dir,
+               ^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+[2025-06-16 23:58:50,741: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-16 23:58:50,741: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-16 23:58:50,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-16 23:58:50,741: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-16 23:58:50,741: INFO: common: created directory at: artifacts]
+[2025-06-16 23:58:50,741: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-16 23:58:50,741: ERROR: main: 'NoneType' object has no attribute 'local_data_file']
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\components\data_ingestion.py", line 16, in download_file
+    if not os.path.exists(self.config.local_data_file):
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'local_data_file'
+[2025-06-17 00:04:36,999: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-17 00:04:36,999: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 00:04:36,999: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 00:04:36,999: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 00:04:37,014: INFO: common: created directory at: artifacts]
+[2025-06-17 00:04:37,014: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 00:04:38,263: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B6BC:B5609:43934:A4C92:685063BC
+Accept-Ranges: bytes
+Date: Mon, 16 Jun 2025 18:34:37 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10226-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1750098877.281514,VS0,VE307
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5b71b79327efda4f812e004b925945161e42a4cb
+Expires: Mon, 16 Jun 2025 18:39:37 GMT
+Source-Age: 0
+
+]
+[2025-06-17 00:04:38,442: INFO: main: >>>>> stage Data ingestion stage completed <<<<<<<
+
+x==========x]
