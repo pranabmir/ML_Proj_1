@@ -40,6 +40,6 @@ for filepath in list_of_files:
         with open(filepath,'w') as f:
 
             pass
-            logging.info("Creating empty file: {filepath}")
+            logging.info(f"Creating empty file: {filepath}")
     else:
         logging.info(f"{filename} already exists")
