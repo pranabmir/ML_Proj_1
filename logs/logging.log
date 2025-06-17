@@ -248,3 +248,137 @@ Source-Age: 0
 [2025-06-17 00:04:38,442: INFO: main: >>>>> stage Data ingestion stage completed <<<<<<<
 
 x==========x]
+[2025-06-17 12:51:52,916: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-17 12:51:52,918: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:51:52,921: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:51:52,923: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:51:52,923: INFO: common: created directory at: artifacts]
+[2025-06-17 12:51:52,923: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 12:51:52,924: INFO: data_ingestion: File already exists]
+[2025-06-17 12:51:52,932: INFO: main: >>>>> stage Data ingestion stage completed <<<<<<<
+
+x==========x]
+[2025-06-17 12:52:42,263: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-06-17 12:56:29,181: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-06-17 12:56:29,400: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-17 12:56:29,401: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:56:29,402: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:56:29,403: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:56:29,403: INFO: common: created directory at: artifacts]
+[2025-06-17 12:56:29,404: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 12:56:29,404: INFO: data_ingestion: File already exists]
+[2025-06-17 12:56:29,406: INFO: main: >>>>> stage Data ingestion stage completed <<<<<<<
+
+x==========x]
+[2025-06-17 12:56:29,406: INFO: main: >>>>>>>> stage Data validation stage started <<<<<<<<]
+[2025-06-17 12:56:29,407: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:56:29,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:56:29,410: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:56:29,411: INFO: common: created directory at: artifacts]
+[2025-06-17 12:56:29,411: ERROR: main: "'ConfigBox' object has no attribute 'data_valdation'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'data_valdation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_valdation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_valdation'. Did you mean: 'data_validation'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_valdation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'data_valdation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_valdation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_valdation'. Did you mean: 'data_validation'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 20, in <module>
+    data_ingestion.initiate_data_validation()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_validation_pipeline.py", line 14, in initiate_data_validation
+    data_validation_config = config.get_data_validation_config()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\MLOPS\ML_Proj_1\src\datascience\config\configuration.py", line 28, in get_data_validation_config
+    config = self.config.data_valdation
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_valdation'". Did you mean: 'data_validation'?
+[2025-06-17 12:57:58,250: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-06-17 12:57:58,471: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-17 12:57:58,473: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:57:58,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:57:58,475: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:57:58,475: INFO: common: created directory at: artifacts]
+[2025-06-17 12:57:58,475: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 12:57:58,476: INFO: data_ingestion: File already exists]
+[2025-06-17 12:57:58,478: INFO: main: >>>>> stage Data ingestion stage completed <<<<<<<
+
+x==========x]
+[2025-06-17 12:57:58,478: INFO: main: >>>>>>>> stage Data validation stage started <<<<<<<<]
+[2025-06-17 12:57:58,479: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:57:58,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:57:58,481: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:57:58,481: INFO: common: created directory at: artifacts]
+[2025-06-17 12:57:58,481: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-17 12:57:58,482: ERROR: main: name 'pd' is not defined]
+Traceback (most recent call last):
+  File "E:\MLOPS\ML_Proj_1\main.py", line 20, in <module>
+    data_ingestion.initiate_data_validation()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\pipeline\data_validation_pipeline.py", line 16, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "E:\MLOPS\ML_Proj_1\src\datascience\components\data_validation.py", line 33, in validate_all_columns
+    raise e
+  File "E:\MLOPS\ML_Proj_1\src\datascience\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+           ^^
+NameError: name 'pd' is not defined
+[2025-06-17 12:58:40,571: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-06-17 12:58:40,780: INFO: main: >>>>>>>> stage Data ingestion stage started <<<<<<<<]
+[2025-06-17 12:58:40,781: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:58:40,782: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:58:40,783: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:58:40,784: INFO: common: created directory at: artifacts]
+[2025-06-17 12:58:40,784: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-17 12:58:40,784: INFO: data_ingestion: File already exists]
+[2025-06-17 12:58:40,787: INFO: main: >>>>> stage Data ingestion stage completed <<<<<<<
+
+x==========x]
+[2025-06-17 12:58:40,787: INFO: main: >>>>>>>> stage Data validation stage started <<<<<<<<]
+[2025-06-17 12:58:40,788: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-17 12:58:40,789: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-17 12:58:40,790: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-17 12:58:40,790: INFO: common: created directory at: artifacts]
+[2025-06-17 12:58:40,791: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-17 12:58:40,805: INFO: main: >>>>> stage Data validation stage completed <<<<<<<
+
+x==========x]
