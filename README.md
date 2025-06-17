@@ -1,4 +1,4 @@
-# ML_Proj_1
+# ML_Proj_1 - This is a simple wine-quality analysis ML model. It includes pre-cleaned data. Aim of this project is to create end-to-end ML pipeline.
 
 ### Workflows of ML-Pipeline
  1. Data Ingestion
